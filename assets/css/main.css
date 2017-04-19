@@ -1,0 +1,54 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{    
+    position: relative;
+}
+
+header :last-child{ 
+    border: 1px solid black;
+    width: 10%;        
+}
+
+#container{
+    position: relative;
+    height: 350px;
+    width: 70%;
+}
+
+#container #fila1 div{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+#container #fila1 div span{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    color: #0cd5dd;
+    font-size: 12px;
+    
+}
+
+#container #fila2 div{
+    display: inline-block;
+    position: relative; 
+    margin: 10px;
+}
+#container #fila2 div span{
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;  
+    color: #0cd5dd;
+    font-size: 12px;
+}
+
+/*---------Efecto----------*/
+
+ #container div:hover{
+    transform: rotate(360deg);
+     transition: .6s;
+}
